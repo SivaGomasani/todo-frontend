@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter,Route,Routes} from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import Lists from './components/Lists';
 import Completed from './components/completed';
@@ -8,14 +8,13 @@ import Update from './components/Update';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/todo-frontend">
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/get" element={<Get />}></Route>
-        <Route path="/all" element={<Lists />}></Route>
-        <Route path="/completed" element={<Completed />}></Route>
-         <Route path='/update/:id' element={<Update />} />
-
+        <Route path="/" element={<Home />} />
+        <Route path="/get" element={<Get />} />
+        <Route path="/all" element={<Lists />} />
+        <Route path="/completed" element={<Completed />} />
+        <Route path="/update/:id" element={<Update />} />
       </Routes>
     </BrowserRouter>
   );

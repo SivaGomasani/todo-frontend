@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SivaGomasani.github.io/todo-frontend",
+  "homepage": "https://sivagomasani.github.io/todo-frontend",
   "engines": {
     "node": "18.x",
     "npm": ">=7.0.0"
