@@ -1,0 +1,175 @@
+
+.navbar
+{
+    background-color: rgb(47, 46, 46);
+    color: aqua;
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.navbar a:hover
+{
+    color: orange;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; 
+}
+
+.home .btn {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(64, 0, 255); 
+    color: white;
+    border: none;
+    width: 200px;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.home .btn:hover {
+    background: rgb(67, 110, 242);
+    cursor: pointer;
+}
+
+
+form,.update-form
+{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    padding: 20px;
+}
+
+label
+{
+    margin-bottom: 5px;
+    margin-top: 10px;
+   
+}
+input
+{
+    padding: 5px;
+}
+
+form button
+{
+    margin-top: 10px;
+    background: rgb(46, 157, 46);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+form button:hover{
+    background: rgb(0, 131, 0);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: grey;
+    padding: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+
+.lists
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.card
+{
+    border: 2px solid;
+    gap: 30px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    border: none;
+    border-radius: 10px;
+}
+
+.card span
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card span button
+{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.card span .update
+{
+    background: green;
+}
+.card span .delete
+{
+     background: rgb(232, 173, 64);
+}
+
+button
+{
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: red;
+    white-space: nowrap; /* Prevent wrapping */
+    transition: all 1s ease-in-out;
+    animation: slide 5s linear infinite;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+
+
+@keyframes slide {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
